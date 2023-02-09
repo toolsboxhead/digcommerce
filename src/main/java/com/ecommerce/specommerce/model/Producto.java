@@ -16,7 +16,7 @@ public class Producto {
     private Integer id;
     private String nombre;
     private String descripcion;
-    private double precio_unit;
+    private Double precio_unit;
     private String imagen;
     private int cantidad;
     private String unidad;
@@ -31,7 +31,7 @@ public class Producto {
 
    
 
-    public Producto(Integer id, String nombre, String descripcion, double precio_unit, String imagen, int cantidad,
+    public Producto(Integer id, String nombre, String descripcion, Double precio_unit, String imagen, int cantidad,
             String unidad, Usuario usuario) {
         this.id = id;
         this.nombre = nombre;
@@ -69,11 +69,11 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio_unit() {
+    public Double getPrecio_unit() {
         return precio_unit;
     }
 
-    public void setPrecio_unit(double precio_unit) {
+    public void setPrecio_unit(Double precio_unit) {
         this.precio_unit = precio_unit;
     }
 
