@@ -16,7 +16,15 @@
 
   <!-- Custom styles for this template -->
    <link href="../css/heroic-features.css" rel="stylesheet">
+<style>
+ /*  body {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0;
+} */
 
+
+</style>
 </head>
 
 <body>
@@ -32,11 +40,13 @@
   <!-- Page Heading/Breadcrumbs -->
   <h1 class="mt-4 mb-3">
     Spring eCommerce <small>Productos</small>
+    
   </h1>
 
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     <li class="breadcrumb-item active">Crear Productos</li>
+    
   </ol>
 
   <h2>Crear Producto</h2>
@@ -87,15 +97,66 @@
           <span class="glyphicon glyphicon-saved"></span> Guardar
         </button>
       </div>
-    </div>
 
+      <div class="col-sm-2">
+        <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-saved"></span> Salir
+        </button>
+      </div>
+    </div>
+    
+      
+      
+        
+      
+ 
   </form>
 
 </div>
+<div th:if="${save !=null}" >
+  <div th:replace="productos/infoaction.html::popup"></div>
+  <!-- <input type="checkbox" name="" id="cerrar">
+ 
+  <div class="modal">
+    
+  <div class="contenido">
+    <label for="cerrar" id="btn-cerrar">X</label>
+    <h2>Vista Nuestro Blog</h2>
+    <div th:text="${save}"></div>
+    <img src="https://picsum.photos/150/150" alt="">
+  </div>
+  </div> -->
+
+ <!-- <input type="checkbox" name="" id="cerrar">
+   <div class="modal">
+
+    <div class="contenido">
+      <div class="enc">
+        <p><label for="cerrar" id="btn-cerrar">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=" #48cae4" class="bi bi-x-square"
+              viewBox="0 0 16 16">
+              <path
+                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </p>
+      </div>
+
+      <div class="corpo">
+        <p>Se Guardo Correctamente!</p>
+      </div>
+      <div class="btn-close">
+      </div>
+    </div>
+
+  </div> -->
+</div> 
 <!-- /.container -->
 
 <!-- Footer -->
-<div th:include="administrador/template_admin.html::footer"></div>
+<div th:replace="administrador/template_admin.html::footer"></div>
 
 <!-- Bootstrap core JavaScript -->
 <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
