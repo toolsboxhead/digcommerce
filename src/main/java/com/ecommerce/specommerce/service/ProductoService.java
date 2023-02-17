@@ -3,7 +3,7 @@ package com.ecommerce.specommerce.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.ecommerce.specommerce.model.Producto;
+import com.ecommerce.specommerce.domain.model.Producto;
 
 public interface ProductoService {
     public Producto save(Producto producto);

@@ -1,5 +1,7 @@
 package com.ecommerce.specommerce.model;
 
+import com.ecommerce.specommerce.domain.model.Producto;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

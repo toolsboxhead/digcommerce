@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.ecommerce.specommerce.model.Producto;
+import com.ecommerce.specommerce.domain.model.Producto;
 import com.ecommerce.specommerce.model.Usuario;
 import com.ecommerce.specommerce.service.ProductoService;
 import com.ecommerce.specommerce.service.UpLoadFileService;

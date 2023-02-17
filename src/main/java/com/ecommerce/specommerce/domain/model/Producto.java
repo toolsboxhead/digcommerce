@@ -1,4 +1,6 @@
-package com.ecommerce.specommerce.model;
+package com.ecommerce.specommerce.domain.model;
+
+import com.ecommerce.specommerce.model.Usuario;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
